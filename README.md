@@ -1,28 +1,30 @@
-# business-service-name-api
+# local-business-offering-api
 
-An API and database of business service names
-
-## Business Service
+An API and database of local business offerings (LBO)
 
 ## Object Model
 
-### Service
+This project uses singular camelCase for all objects.
 
-* ServiceId
-* Name
-* CategoryId
+### offering
 
-### Catagory
+* id
+* name
+* categoryId []
+* industryId []
 
-* CategoryId
-* Name
-* CategoryId
+### category
 
+* id
+* name
+* categoryId []
 
-# Is this a service or an API or both
+### industry
 
-## List of microservices
+* id
+* name
+* industryId []
 
-* business service names - the name of the business service. For example Mens Haircut or Shoe Shine
-* business service category names - the name of the categories of business service. For example Barber, Haircut, or Spa
-* business service vendors
+### vendor - future
+
+### location - future
